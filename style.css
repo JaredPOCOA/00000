@@ -1,1 +1,138 @@
-#wix-banner { display: none; }
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #d0d0b0; /* Softer, muted background color */
+    color: #333;
+}
+
+/* Header and Navbar */
+header {
+    padding: 20px;
+    background-color: #d0d0b0; /* Match the body background */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a img {
+    transition: transform 0.2s ease;
+}
+
+.logo a img:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333; /* Make text color match the theme */
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) saturate(100%) sepia(30%) hue-rotate(10deg) saturate(200%) brightness(90%);
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Softer color for text */
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.search input {
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+    outline: none;
+    background: transparent;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    padding: 50px 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+}
+
+.image {
+    width: 450px;
+    height: 600px;
+    background-color: #2d2d2d;
+    background-image: url('https://static.wixstatic.com/media/11062b_af5fc0e719e9488bad70310c386cb74b~mv2.jpg/v1/fill/w_564,h_948,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_af5fc0e719e9488bad70310c386cb74b~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+/* Content Section */
+.content {
+    max-width: 600px;
+    color: #333;
+}
+
+.content h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #333; /* Darker color for main title */
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
